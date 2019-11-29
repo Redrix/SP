@@ -26,7 +26,7 @@ function afficherDate(){
     let numeroMois = new Date().getMonth();
     let nomMois = moisStr(numeroMois);
     let annee = new Date().getFullYear();
-    document.getElementById("date").innerText = nomjour + " " + numeroJour + " " + nomMois + " " + annee;
+    document.getElementById("date").innerText = nomjour + " " + new Date().getDate() + " " + nomMois + " " + annee;
 }
 
 function jourStr(jour){
