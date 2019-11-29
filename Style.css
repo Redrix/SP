@@ -1,0 +1,91 @@
+.conteneur{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bare{
+	width: 60%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+
+.icon{
+	width: 20%;	
+	transform: scaleX(-1);
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.icon:hover{
+	transform: scaleX(1);
+}
+
+.icon1{
+	width: 20%;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.icon1:hover{
+	transform: scaleX(-1);
+}
+
+.boite{
+	margin-top: 100px;
+	width: 20%;
+	margin-right: 50px;
+	border: solid 5px #0093fe;
+	background-color: #e5823a;
+	box-shadow: 5px 5px 2px 1px black;
+	border-radius: 20px;
+}
+
+.boite > div{
+	padding-left: 8px;
+}
+
+h2{
+	border-bottom: solid 5px white;
+	text-align: center;
+}
+
+body{
+	background-color: #0C6D75;
+	margin: 80px;
+	color: white;
+	font-family: 'Permanent Marker', cursive;
+	margin-top: 50px;
+}
+
+label{
+	font-size: 50px;
+}
+
+input{
+	width: 60%;
+	background: none;
+	border: none;
+	border-bottom: solid 3px white;
+	color: white;
+	font-size: 25px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.heure{
+	width: 50%;
+	text-align: left;
+	font-size: xx-large;
+	padding-bottom: 50px;
+}
+
+.date{
+	width: 50%;
+	text-align: right;
+	font-size: xx-large;
+}
