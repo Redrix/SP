@@ -66,51 +66,51 @@ function jourStr(jour){
 
 function moisStr(mois){
     switch (mois){
-        case 1:
+        case 0:
             return "Janvier";
         break;
 
-        case 2:
+        case 1:
             return "Février";
         break;
 
-        case 3:
+        case 2:
             return "Mars";
         break;
 
-        case 4:
+        case 3:
             return "Avril";
         break;
 
-        case 5:
+        case 4:
             return "Mai";
         break;
 
-        case 6:
+        case 5:
             return "Juin";
         break;
 
-        case 7:
+        case 6:
             return "Juillet";
         break;
 
-        case 8:
+        case 7:
             return "Août";
         break;
 
-        case 9:
+        case 8:
             return "Septembre";
         break;
 
-        case 10:
+        case 9:
             return "Octobre";
         break;
 
-        case 11:
+        case 10:
             return "Novembre";
         break;
 
-        case 12:
+        case 11:
             return "Décembre";
         break;
 
