@@ -55,7 +55,7 @@ function jourStr(jour){
             return "Samedi";
         break;
 
-        case 7:
+        case 0:
             return "Dimanche";
         break;
 
