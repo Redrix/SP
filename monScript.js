@@ -30,7 +30,11 @@ function afficherDate(){
 }
 
 function jourStr(jour){
-    switch (jour){
+    switch (jour){ 
+        case 0:
+            return "Dimanche";
+        break;
+            
         case 1:
             return "Lundi";
         break;
@@ -53,10 +57,6 @@ function jourStr(jour){
 
         case 6:
             return "Samedi";
-        break;
-
-        case 0:
-            return "Dimanche";
         break;
 
         default:
