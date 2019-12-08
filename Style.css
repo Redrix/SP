@@ -1,91 +1,194 @@
-.conteneur{
-	display: flex;
-	flex-wrap: wrap;
+@media screen and (max-width: 640px){
+	.conteneur{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.bare{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 5%;
+	}
+	
+	
+	.icon{
+		opacity: 0%;
+		width: 20%;	
+		transform: scaleX(-1);
+		text-align: center;
+		transition-duration: 0.5s;
+	}
+	
+	.icon:hover{
+		transform: scaleX(1);
+	}
+	
+	.icon1{
+		opacity: 0%;
+		width: 20%;
+		text-align: center;
+		transition-duration: 0.5s;
+	}
+	
+	.icon1:hover{
+		transform: scaleX(-1);
+	}
+	
+	.boite{
+		margin-top: 80px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		border: solid 5px #0093fe;
+		background-color: #e5823a;
+		box-shadow: 5px 5px 2px 1px black;
+		border-radius: 20px;
+	}
+	
+	.boite > div{
+		padding-left: 10px;
+		font-size: xx-large;
+	}
+	
+	h2{
+		font-size: xx-large;
+		border-bottom: solid 5px white;
+		text-align: center;
+	}
+	
+	body{
+		background-color: #0C6D75;
+		margin: 20px;
+		color: white;
+		font-family: 'Permanent Marker', cursive;
+		margin-top: 50px;
+	}
+	
+	label{
+		font-size: 50px;
+	}
+	
+	input{
+		width: 100%;
+		background: none;
+		border: none;
+		border-bottom: solid 3px white;
+		color: white;
+		font-size: 25px;
+		font-family: 'Permanent Marker', cursive;
+	}
+	
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	
+	.heure{
+		width: 100%;
+		text-align: center;
+		font-size: xx-large;
+		padding-bottom: 50px;
+	}
+	
+	.date{
+		width: 100%;
+		text-align: center;
+		font-size: xx-large;
+	}
 }
+@media screen and (min-width: 640px){
+	.conteneur{
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-.bare{
-	width: 60%;
-	text-align: center;
-	margin-bottom: 5%;
-}
+	.bare{
+		width: 60%;
+		text-align: center;
+		margin-bottom: 5%;
+	}
 
 
-.icon{
-	width: 20%;	
-	transform: scaleX(-1);
-	text-align: center;
-	transition-duration: 0.5s;
-}
+	.icon{
+		width: 20%;	
+		transform: scaleX(-1);
+		text-align: center;
+		transition-duration: 0.5s;
+	}
 
-.icon:hover{
-	transform: scaleX(1);
-}
+	.icon:hover{
+		transform: scaleX(1);
+	}
 
-.icon1{
-	width: 20%;
-	text-align: center;
-	transition-duration: 0.5s;
-}
+	.icon1{
+		width: 20%;
+		text-align: center;
+		transition-duration: 0.5s;
+	}
 
-.icon1:hover{
-	transform: scaleX(-1);
-}
+	.icon1:hover{
+		transform: scaleX(-1);
+	}
 
-.boite{
-	margin-top: 100px;
-	width: 20%;
-	margin-right: 50px;
-	border: solid 5px #0093fe;
-	background-color: #e5823a;
-	box-shadow: 5px 5px 2px 1px black;
-	border-radius: 20px;
-}
+	.boite{
+		margin-top: 100px;
+		width: 20%;
+		margin-right: auto;
+		margin-left: auto;
+		border: solid 5px #0093fe;
+		background-color: #e5823a;
+		box-shadow: 5px 5px 2px 1px black;
+		border-radius: 20px;
+	}
 
-.boite > div{
-	padding-left: 8px;
-}
+	.boite > div{
+		padding-left: 8px;
+		overflow: hidden;
+	}
 
-h2{
-	border-bottom: solid 5px white;
-	text-align: center;
-}
+	h2{
+		border-bottom: solid 5px white;
+		text-align: center;
+		overflow-wrap: break-word;
+	}
 
-body{
-	background-color: #0C6D75;
-	margin: 80px;
-	color: white;
-	font-family: 'Permanent Marker', cursive;
-	margin-top: 50px;
-}
+	body{
+		background-color: #0C6D75;
+		margin: 80px;
+		color: white;
+		font-family: 'Permanent Marker', cursive;
+		margin-top: 50px;
+	}
 
-label{
-	font-size: 50px;
-}
+	label{
+		font-size: 50px;
+	}
 
-input{
-	width: 60%;
-	background: none;
-	border: none;
-	border-bottom: solid 3px white;
-	color: white;
-	font-size: 25px;
-	font-family: 'Permanent Marker', cursive;
-}
+	input{
+		width: 60%;
+		background: none;
+		border: none;
+		border-bottom: solid 3px white;
+		color: white;
+		font-size: 25px;
+		font-family: 'Permanent Marker', cursive;
+	}
 
-a{
-	color: white;
-	text-decoration: none;
-}
+	a{
+		color: white;
+		text-decoration: none;
+	}
 
-.heure{
-	width: 50%;
-	text-align: left;
-	font-size: xx-large;
-	padding-bottom: 50px;
-}
+	.heure{
+		width: 50%;
+		text-align: left;
+		font-size: xx-large;
+		padding-bottom: 50px;
+	}
 
-.date{
-	width: 50%;
-	text-align: right;
-	font-size: xx-large;
+	.date{
+		width: 50%;
+		text-align: right;
+		font-size: xx-large;
+	}
 }
