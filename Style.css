@@ -12,6 +12,7 @@
 	
 	
 	.icon{
+                visibility: hidden;
 		opacity: 0%;
 		width: 20%;	
 		transform: scaleX(-1);
@@ -24,6 +25,7 @@
 	}
 	
 	.icon1{
+                visibility: hidden;
 		opacity: 0%;
 		width: 20%;
 		text-align: center;
