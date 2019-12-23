@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang = "fr">
 	<head>
-		<meta charset = "UTF-8">
+		<meta charset = "UTF-8"/>
+		<meta name="viewport" content="width=device-width"/>
 		<title>Start page</title>
-                <meta name="viewport" content="width=device-width"/>
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"/>
 		<link href ="Style.css" rel = "stylesheet"/>
 		<link href="IMG_20191114_153339_888.png" rel="icon"/>
+		<script 
+			src="https://code.jquery.com/jquery-3.4.1.min.js" 
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+			crossorigin="anonymous"></script>
 	</head>
 	
 	<body>
@@ -15,13 +19,13 @@
 			<div class="date" id="date"></div>
 		</div>
 		<div class = "conteneur">
-			<div class="icon"><img src = "IMG_20191114_153339_888.png" width="150px" height="150px"></div>
-			<div class = "bare">
-				<form method="GET" action="https://google.com/search">
-				<label>Search : <input type="text" name="q" cursor="text"/></label>
+			<div class="icon"><img src = "IMG_20191114_153339_888.png" alt="Icone"></div>
+			<div class = "barre">
+				<form id="recherche" method="GET" action="https://google.com/search">
+					<label>Search : <input type="text" name="q"/></label>
 				</form>
 			</div>
-			<div class="icon1"><img src = "IMG_20191114_153339_888.png" width="150px" height="150px"></div>
+			<div class="icon1"><img src = "IMG_20191114_153339_888.png" alt="Icone"></div>
 		</div>
 		<div class = "conteneur">
 			<div class = "boite"> 
@@ -49,7 +53,8 @@
 				<div><a href="http://portail.mediaschool.eu/">Portail Médiaschool</a></div>
 				<div></div>
 			</div>
-		</div>	
+		</div>
+		<div class="API" id="API"></div>
+		<script src = "monScript.js"></script>
 	</body>
-	<script src = "monScript.js" type = "text/javascript"></script>
 </html>

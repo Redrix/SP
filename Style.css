@@ -1,50 +1,131 @@
-@media screen and (max-width: 640px){
-	.conteneur{
-		display: flex;
-		flex-wrap: wrap;
+.conteneur{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.barre{
+	width: 60%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+img{
+	width: 150px;
+	height: 150px;
+}
+
+
+.icon{
+	width: 20%;	
+	transform: scaleX(-1); /* Permet de faire pivoter les logos */
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.icon:hover{
+	transform: scaleX(1);
+}
+
+.icon1{
+	width: 20%;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.icon1:hover{
+	transform: scaleX(-1);
+}
+
+.boite{
+	margin-top: 100px;
+	width: 20%;
+	margin-right: auto;
+	margin-left: auto;
+	border: solid 5px #0093fe;
+	background-color: #e5823a;
+	box-shadow: 5px 5px 2px 1px black;
+	border-radius: 20px;
+}
+
+.boite > div{
+	padding-left: 8px;
+	overflow: hidden;
+}
+
+h2{
+	border-bottom: solid 5px white;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+
+body{
+	background-color: #0C6D75;
+	margin: 80px;
+	color: white;
+	font-family: 'Permanent Marker', cursive;
+	margin-top: 40px;
+}
+
+label{
+	font-size: 50px;
+}
+
+input{
+	width: 60%;
+	background: none;
+	border: none;
+	border-bottom: solid 3px white;
+	color: white;
+	font-size: 25px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.heure{
+	width: 50%;
+	text-align: left;
+	font-size: xx-large;
+	padding-bottom: 50px;
+}
+
+.date{
+	width: 50%;
+	text-align: right;
+	font-size: xx-large;
+}
+
+.API{
+	padding-top: 60px;
+	text-align: center;
+	font-size: x-large;
+}
+
+@media screen and (max-width: 640px){ /* Affichage spécifique pour petite résolution et mobile */
+
+	body{
+		margin: 30px;
 	}
 	
-	.bare{
+	.barre{
 		width: 100%;
-		text-align: center;
-		margin-bottom: 5%;
 	}
 	
 	
 	.icon{
-                visibility: hidden;
-		opacity: 0%;
-		width: 20%;	
-		transform: scaleX(-1);
-		text-align: center;
-		transition-duration: 0.5s;
-	}
-	
-	.icon:hover{
-		transform: scaleX(1);
+		visibility: hidden;
 	}
 	
 	.icon1{
-                visibility: hidden;
-		opacity: 0%;
-		width: 20%;
-		text-align: center;
-		transition-duration: 0.5s;
-	}
-	
-	.icon1:hover{
-		transform: scaleX(-1);
+		visibility: hidden;
 	}
 	
 	.boite{
 		margin-top: 80px;
 		width: 100%;
-		margin-right: auto;
-		margin-left: auto;
-		border: solid 5px #0093fe;
-		background-color: #e5823a;
-		box-shadow: 5px 5px 2px 1px black;
-		border-radius: 20px;
 	}
 	
 	.boite > div{
@@ -54,42 +135,16 @@
 	
 	h2{
 		font-size: xx-large;
-		border-bottom: solid 5px white;
-		text-align: center;
-	}
-	
-	body{
-		background-color: #0C6D75;
-		margin: 20px;
-		color: white;
-		font-family: 'Permanent Marker', cursive;
-		margin-top: 50px;
-	}
-	
-	label{
-		font-size: 50px;
 	}
 	
 	input{
 		width: 100%;
-		background: none;
-		border: none;
-		border-bottom: solid 3px white;
-		color: white;
-		font-size: 25px;
-		font-family: 'Permanent Marker', cursive;
-	}
-	
-	a{
-		color: white;
-		text-decoration: none;
 	}
 	
 	.heure{
 		width: 100%;
 		text-align: center;
 		font-size: xx-large;
-		padding-bottom: 50px;
 	}
 	
 	.date{
@@ -97,100 +152,9 @@
 		text-align: center;
 		font-size: xx-large;
 	}
-}
-@media screen and (min-width: 640px){
-	.conteneur{
-		display: flex;
-		flex-wrap: wrap;
-	}
 
-	.bare{
-		width: 60%;
-		text-align: center;
-		margin-bottom: 5%;
-	}
-
-
-	.icon{
-		width: 20%;	
-		transform: scaleX(-1);
-		text-align: center;
-		transition-duration: 0.5s;
-	}
-
-	.icon:hover{
-		transform: scaleX(1);
-	}
-
-	.icon1{
-		width: 20%;
-		text-align: center;
-		transition-duration: 0.5s;
-	}
-
-	.icon1:hover{
-		transform: scaleX(-1);
-	}
-
-	.boite{
-		margin-top: 100px;
-		width: 20%;
-		margin-right: auto;
-		margin-left: auto;
-		border: solid 5px #0093fe;
-		background-color: #e5823a;
-		box-shadow: 5px 5px 2px 1px black;
-		border-radius: 20px;
-	}
-
-	.boite > div{
-		padding-left: 8px;
-		overflow: hidden;
-	}
-
-	h2{
-		border-bottom: solid 5px white;
-		text-align: center;
-		overflow-wrap: break-word;
-	}
-
-	body{
-		background-color: #0C6D75;
-		margin: 80px;
-		color: white;
-		font-family: 'Permanent Marker', cursive;
-		margin-top: 50px;
-	}
-
-	label{
-		font-size: 50px;
-	}
-
-	input{
-		width: 60%;
-		background: none;
-		border: none;
-		border-bottom: solid 3px white;
-		color: white;
-		font-size: 25px;
-		font-family: 'Permanent Marker', cursive;
-	}
-
-	a{
-		color: white;
-		text-decoration: none;
-	}
-
-	.heure{
-		width: 50%;
-		text-align: left;
-		font-size: xx-large;
-		padding-bottom: 50px;
-	}
-
-	.date{
-		width: 50%;
-		text-align: right;
+	.API{
+		padding-top: 100px;
 		font-size: xx-large;
 	}
 }

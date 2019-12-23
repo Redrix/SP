@@ -1,11 +1,17 @@
-afficherHeure();
-afficherDate();
+let nombreDeClick = 0;
 
-setInterval(() => {
+afficherHeure(); // Afficher l'heure sur la page
+afficherDate(); // Afficher la date sur la page
+getQuote(); // Afficher une phrase aléatoire
+
+document.getElementById("API").addEventListener("click", easterEgg);
+document.getElementById("recherche").setAttribute("action", "test");
+
+setInterval(() => { // Rafraichir l'heure toute les secondes
     afficherHeure();
 }, 1000);
 
-function ajouterZero(nombre){
+function ajouterZero(nombre){ // Fonction pour ajouté un 0 quand un nombre est inférieur a 10 pour l'heure
     if(nombre < 10){
         return "0" + nombre;
     }else{
@@ -13,14 +19,14 @@ function ajouterZero(nombre){
     }
 }
 
-function afficherHeure(){
+function afficherHeure(){ // Fonction qui récupère l'heure et l'affiche
     let heure = ajouterZero(new Date().getHours());
     let minutes = ajouterZero(new Date().getMinutes());
     let secondes = ajouterZero(new Date().getSeconds());
     document.getElementById("heure").innerText = heure + ":" + minutes + ":" + secondes;
 }
 
-function afficherDate(){
+function afficherDate(){ // Fonction pour récupérer la date et l'afficher
     let numeroJour = new Date().getDay();
     let nomjour = jourStr(numeroJour);
     let numeroMois = new Date().getMonth();
@@ -29,12 +35,12 @@ function afficherDate(){
     document.getElementById("date").innerText = nomjour + " " + new Date().getDate() + " " + nomMois + " " + annee;
 }
 
-function jourStr(jour){
-    switch (jour){ 
+function jourStr(jour){ // Fonction pour retourner le jour de la semaine en text
+    switch (jour){
         case 0:
             return "Dimanche";
         break;
-            
+
         case 1:
             return "Lundi";
         break;
@@ -64,7 +70,7 @@ function jourStr(jour){
     }
 }
 
-function moisStr(mois){
+function moisStr(mois){ // Fonction pour retourner le mois en text
     switch (mois){
         case 0:
             return "Janvier";
@@ -116,5 +122,48 @@ function moisStr(mois){
 
         default:
             return "Erreur";
+    }
+}
+
+function getQuote(){ // API pour récupérer une phrase aléatoire
+    $.ajax({
+		type: "GET",
+		url: "https://quotes.rest/qod",
+		dataType: "json",
+		success: function(result, status, xhr){
+			document.getElementById("API").innerText = result.contents.quotes[0].quote;
+		},
+		error: function(xhr, status, error){
+			console.error(status + " : " + error);
+		}
+	});
+};
+
+function easterEgg(){ // Un easter egg
+    nombreDeClick += 1;
+    switch (nombreDeClick){
+        case 3 :
+            document.getElementById("API").innerText = "Stop cliquer >:3";
+        break;
+        
+        case 5 :
+            document.getElementById("API").innerText = "J'ai dit stop >:3";
+        break;
+
+        case 7 :
+            document.getElementById("API").innerText = "Bon ça suffit ! >>:3";
+        break;
+
+        case 9 :
+            document.getElementById("API").innerText = "Plus de page au prochain clique >>>:3";
+        break;
+
+        case 10 :
+            document.write(""); // Supprimer la page entière
+        break;
+
+        default :
+        
+        break;
     }
 }
