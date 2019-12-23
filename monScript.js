@@ -5,7 +5,6 @@ afficherDate(); // Afficher la date sur la page
 getQuote(); // Afficher une phrase aléatoire
 
 document.getElementById("API").addEventListener("click", easterEgg);
-document.getElementById("recherche").setAttribute("action", "test");
 
 setInterval(() => { // Rafraichir l'heure toute les secondes
     afficherHeure();
