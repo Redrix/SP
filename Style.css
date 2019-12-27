@@ -1,6 +1,7 @@
 .conteneur{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .barre{
@@ -104,6 +105,30 @@ a{
 	font-size: x-large;
 }
 
+.moteur{
+	width: 5%;
+	flex-basis: content;
+	margin-inline: 20px;
+}
+
+.logo{
+	width: 50px;
+	height: 50px;
+	opacity: 50%;
+	border-radius: 10px;
+	transition-duration: 0.6s;
+}
+
+#actif{
+	box-shadow: 0px 0px 5px 5px lightblue;
+	opacity: 100%;
+}
+
+.logo:hover{
+	box-shadow: 0px 0px 5px 5px lightblue;
+	opacity: 100%;
+}
+
 @media screen and (max-width: 640px){ /* Affichage spécifique pour petite résolution et mobile */
 
 	body{
@@ -116,10 +141,12 @@ a{
 	
 	
 	.icon{
+		transition-duration: 0s;
 		visibility: hidden;
 	}
 	
 	.icon1{
+		transition-duration: 0s;
 		visibility: hidden;
 	}
 	
@@ -156,5 +183,10 @@ a{
 	.API{
 		padding-top: 100px;
 		font-size: xx-large;
+	}
+
+	.logo{
+		transition-duration: 0s;
+		visibility: hidden;
 	}
 }

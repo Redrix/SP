@@ -3,6 +3,7 @@ let nombreDeClick = 0;
 afficherHeure(); // Afficher l'heure sur la page
 afficherDate(); // Afficher la date sur la page
 getQuote(); // Afficher une phrase aléatoire
+addEvent(); // Ajouter un event listener a chaque moteur de recherche
 
 document.getElementById("API").addEventListener("click", easterEgg);
 
@@ -163,6 +164,37 @@ function easterEgg(){ // Un easter egg
 
         default :
         
+        break;
+    }
+}
+
+function addEvent(){
+    let test = document.getElementsByClassName("logo");
+    for ( let i=0; i < test.length; i++){
+        test[i].addEventListener("click", changeActive);
+    }
+}
+
+function changeActive(){
+    document.getElementById("actif").setAttribute("id", "");
+    this.setAttribute("id", "actif");
+    let temp = document.getElementById("actif").getAttribute("src");
+    switch (temp){
+
+        case "https://www.usine-digitale.fr/mediatheque/5/0/0/000305005_homePageUne/logo-google-g.jpg":
+            document.getElementById("recherche").setAttribute("action", "https://google.com/search");
+        break;
+
+        case "https://www.abondance.com/wp-content/uploads/2016/01/b-de-bing-vert.jpg":
+            document.getElementById("recherche").setAttribute("action", "https://www.bing.com/search");
+        break;
+
+        case "https://www.seeweb.fr/wp-content/uploads/2016/03/yahoo-logo-purple.jpg":
+            document.getElementById("recherche").setAttribute("action", "https://fr.search.yahoo.com/search");
+        break;
+
+        case "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kUCNAQ1hi5MQ1xMDuMisHgHaHa%26pid%3DApi&f=1":
+            document.getElementById("recherche").setAttribute("action", "https://duckduckgo.com/");
         break;
     }
 }
