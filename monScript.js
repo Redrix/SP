@@ -196,5 +196,9 @@ function changeActive(){
         case "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kUCNAQ1hi5MQ1xMDuMisHgHaHa%26pid%3DApi&f=1":
             document.getElementById("recherche").setAttribute("action", "https://duckduckgo.com/");
         break;
+
+        case "https://www.graphiline.com/src/applications/news/imaloader/images/graphiline/logo-icone-youtube-2017.jpg":
+            document.getElementById("recherche").setAttribute("action", "https://www.youtube.com/results");
+        break;
     }
 }
