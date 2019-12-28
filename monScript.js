@@ -181,7 +181,7 @@ function changeActive(){
     let temp = document.getElementById("actif").getAttribute("src");
     switch (temp){
 
-        case "https://www.usine-digitale.fr/mediatheque/5/0/0/000305005_homePageUne/logo-google-g.jpg":
+        case "http://images.4ever.eu/data/download/logos/google-259073.jpg":
             document.getElementById("recherche").setAttribute("action", "https://google.com/search");
         break;
 
