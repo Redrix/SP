@@ -181,7 +181,7 @@ function changeActive(){
     let temp = document.getElementById("actif").getAttribute("src");
     switch (temp){
 
-        case "http://images.4ever.eu/data/download/logos/google-259073.jpg":
+        case "https://1.bp.blogspot.com/-kBxIb1MjScw/XO3Xrlz__eI/AAAAAAAAIIU/Xbj3nolyDWwo_1oFucBqz1Gq9ujLkvVXgCLcBGAs/s1600/favicon-google.png":
             document.getElementById("recherche").setAttribute("action", "https://google.com/search");
         break;
 
