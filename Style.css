@@ -129,6 +129,18 @@ a{
 	opacity: 100%;
 }
 
+@media screen and (max-width: 1050px){
+	.boite{
+		margin-top: 80px;
+		width: 40%;
+	}
+	
+	.boite > div{
+		padding-left: 10px;
+		font-size: x-large;
+	}
+}
+
 @media screen and (max-width: 640px){ /* Affichage spécifique pour petite résolution et mobile */
 
 	body{
