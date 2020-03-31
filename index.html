@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang = "fr">
+<html lang="fr">
 	<head>
 		<meta charset = "UTF-8"/>
 		<meta name="viewport" content="width=device-width"/>
 		<title>Start page</title>
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"/>
-		<link href ="Style.css" rel = "stylesheet"/>
+		<link href="Style.css" rel="stylesheet"/>
 		<link href="IMG_20191114_153339_888.png" rel="icon"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<script 
 			src="https://code.jquery.com/jquery-3.4.1.min.js" 
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
@@ -14,25 +15,25 @@
 	</head>
 	
 	<body>
-		<div class="conteneur">
+		 <div class="conteneur">
 			<div class="heure" id="heure"></div>
 			<div class="date" id="date"></div>
 		</div>
 		<div class = "conteneur">
-			<div class="icon"><img src = "IMG_20191114_153339_888.png" alt="Icone"></div>
+			<div class="icon"><img src="IMG_20191114_153339_888.png" alt="Icone"></div>
 			<div class = "barre">
 				<form id="recherche" method="GET" action="https://google.com/search">
 					<label>Search : <input type="text" name="q"/></label>
 				</form>
 			</div>
-			<div class="icon1"><img src = "IMG_20191114_153339_888.png" alt="Icone"></div>
+			<div class="icon1"><img src="IMG_20191114_153339_888.png" alt="Icone"></div>
 		</div>
 		<div class="conteneur">
 			<div class="moteur">
-				<img id="actif" class="logo" src = "https://1.bp.blogspot.com/-kBxIb1MjScw/XO3Xrlz__eI/AAAAAAAAIIU/Xbj3nolyDWwo_1oFucBqz1Gq9ujLkvVXgCLcBGAs/s1600/favicon-google.png" alt = "G"/>
+				<img id="actif" class="logo" src="https://1.bp.blogspot.com/-kBxIb1MjScw/XO3Xrlz__eI/AAAAAAAAIIU/Xbj3nolyDWwo_1oFucBqz1Gq9ujLkvVXgCLcBGAs/s1600/favicon-google.png" alt = "G"/>
 			</div>
 			<div class="moteur">
-				<img class="logo" src = "https://www.abondance.com/wp-content/uploads/2016/01/b-de-bing-vert.jpg" alt = "B"/>
+				<img class="logo" src="https://www.abondance.com/wp-content/uploads/2016/01/b-de-bing-vert.jpg" alt = "B"/>
 			</div>
 			<div class="moteur">
 				<img class="logo" src="https://www.seeweb.fr/wp-content/uploads/2016/03/yahoo-logo-purple.jpg" alt="Y"/>
@@ -44,35 +45,52 @@
 				<img class="logo" src="https://www.graphiline.com/src/applications/news/imaloader/images/graphiline/logo-icone-youtube-2017.jpg" alt="YO"/>
 			</div>
 		</div>
-		<div class = "conteneur">
-			<div class = "boite"> 
+		<div class="conteneur">
+			<div class="boite"> 
 				<h2>Social</h2>
 				<div><a href="https://twitter.com/">Twitter</a></div>
 				<div><a href="https://facebook.com/">Facebook</a></div>
 				<div><a href="https://www.reddit.com/">Reddit</a></div>
 				<div><a href="https://discordapp.com/">Discord</a></div>
 			</div>
-			<div class = "boite"> 
+			<div class="boite"> 
 				<h2>Divertissement</h2>
 				<div><a href="https://furaffinity.net/">Furaffinity</a></div>
 				<div><a href="https://www.youtube.com/">Youtube</a></div>
 				<div><a href="https://www.spotify.com/">Spotify</a></div>
 			</div>
-			<div class = "boite"> 
+			<div class="boite"> 
 				<h2>Prog</h2>
 				<div><a href="https://getbootstrap.com/">Bootstrap</a></div>
 				<div><a href="https://stackoverflow.com/">StackOverflow</a></div>
 				<div><a href="https://github.com/">GitHub</a></div>
 			</div>
-			<div class = "boite"> 
-				<h2>Utile</h2>
-				<div><a href="https://www.paypal.com/">PayPal</a></div>
+			<div class="boite"> 
+				<h2>Cours</h2>
 				<div><a href="https://login.microsoftonline.com/">OutlookOffice</a></div>
 				<div><a href="http://portail.mediaschool.eu/">Portail Médiaschool</a></div>
 				<div></div>
 			</div>
 		</div>
-		<div class="API" id="API"></div>
-		<script src = "monScript.js"></script>
+			<div class="API" id="API">API phrase aléatoire</div>
+			<div class="fondannime">
+			<div class="ciel"></div>
+			<div class="moon"></div>
+			<div class="stars star1"></div>
+			<div class="stars star2"></div>
+			<div class="stars star3"></div>
+			<div class="stars star4"></div>
+			<i id="cloud1" class="fa fa-cloud" aria-hidden="true"></i>
+			<i id="cloud2" class="fa fa-cloud" aria-hidden="true"></i>
+			<i id="cloud3" class="fa fa-cloud" aria-hidden="true"></i>
+			<div class="hill"></div>
+			<div class="hill2"></div>
+			<i id="tree1" class="fas fa-tree"></i>
+			<i id="tree2" class="fas fa-tree"></i>
+			<i id="tree3" class="fas fa-tree"></i>
+			<i id="tree4" class="fas fa-tree"></i>
+			<i id="tree5" class="fas fa-tree"></i>
+		</div>
+		<script src="monScript.js"></script>
 	</body>
 </html>

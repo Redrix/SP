@@ -65,6 +65,8 @@ body{
 	color: white;
 	font-family: 'Permanent Marker', cursive;
 	margin-top: 40px;
+	overflow: hidden;
+	margin: none;
 }
 
 label{
@@ -91,12 +93,14 @@ a{
 	text-align: left;
 	font-size: xx-large;
 	padding-bottom: 50px;
+	color: darkgray;
 }
 
 .date{
 	width: 50%;
 	text-align: right;
 	font-size: xx-large;
+	color: darkgray;
 }
 
 .API{
@@ -108,7 +112,8 @@ a{
 .moteur{
 	width: 5%;
 	flex-basis: content;
-	margin-inline: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .logo{
@@ -122,6 +127,166 @@ a{
 #actif{
 	box-shadow: 0px 0px 5px 5px lightblue;
 	opacity: 100%;
+}
+
+.ciel{
+	position: fixed;
+	z-index: -3;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(180deg, #0D1222, #0C1433, #268999);
+}
+
+.moon{
+	position: fixed;
+	z-index: -1;
+	top: 10px;
+	right: 50px;
+	height: 150px;
+	width: 150px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 20px 15px wheat;
+}
+
+.stars{
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -1;
+	animation-name: twinkle;
+	animation-iteration-count: infinite;
+}
+
+.star1{
+	position: fixed;
+	top: 160px;
+	left: 100px;
+	animation-duration: 1s;
+}
+
+.star2{
+	position: fixed;
+	top: 60px;
+	right: 300px;
+	animation-duration: 1.5s;
+}
+
+.star3{
+	position: fixed;
+	top: 50px;
+	left: 600px;
+	animation-duration: 1.2s;
+}
+
+.star4{
+	position: fixed;
+	top: 150px;
+	right: 800px;
+	animation-duration: 1.8s;
+}
+
+.hill{
+	position: fixed;
+	width: 70%;
+	height: 100%;
+	bottom: -60vh;
+	left: -20vw;
+	background-color: darkslategrey;
+	border-radius: 50%;
+	z-index: -2;
+}
+
+.hill2{
+	position: fixed;
+	width: 70%;
+	height: 82%;
+	bottom: -32vh;
+	right: -8vw;
+	background-color: darkslategrey;
+	border-radius: 50%;
+	z-index: -2;
+}
+
+#cloud1{
+	position: absolute;
+	scale: 5;
+	top: 50px;
+	left: 330px;
+	z-index: -1;
+	opacity: 50%;
+}
+
+#cloud2{
+	position: absolute;
+	scale: 5;
+	top: 250px;
+	left: 750px;
+	z-index: -1;
+	opacity: 50%;
+}
+
+#cloud3{
+	position: absolute;
+	scale: 5;
+	top: 100px;
+	right: 470px;
+	z-index: -1;
+	opacity: 50%;
+}
+
+#tree1{
+	position: absolute;
+	scale: 5;
+	bottom: 200px;
+	left: 100px;
+	z-index: -1;
+	color: #0a220C;
+}
+
+#tree2{
+	position: absolute;
+	scale: 5;
+	bottom: 130px;
+	left: 570px;
+	z-index: -1;
+	color: #0a220C;
+}
+
+#tree3{
+	position: absolute;
+	scale: 5;
+	bottom: 140px;
+	left: 1050px;
+	z-index: -1;
+	color: #0a220C;
+}
+
+#tree4{
+	position: absolute;
+	scale: 5;
+	bottom: 350px;
+	right: 530px;
+	z-index: -1;
+	color: #0a220C;
+}
+
+#tree5{
+	position: absolute;
+	scale: 5;
+	bottom: 150px;
+	right: 100px;
+	z-index: -1;
+	color: #0a220C;
+}
+
+@keyframes twinkle{
+	50%{
+		transform: scale(0.3);
+	}
 }
 
 .logo:hover{
@@ -138,6 +303,10 @@ a{
 	.boite > div{
 		padding-left: 10px;
 		font-size: x-large;
+	}
+
+	.fondannime{
+		display: none;
 	}
 }
 
@@ -198,7 +367,7 @@ a{
 	}
 
 	.logo{
-		transition-duration: 0s;
-		visibility: hidden;
+		height: 80px;
+		width: 80px;
 	}
 }
