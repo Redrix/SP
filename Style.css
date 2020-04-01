@@ -211,7 +211,7 @@ a{
 }
 
 #cloud1{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	top: 50px;
 	left: 330px;
@@ -220,7 +220,7 @@ a{
 }
 
 #cloud2{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	top: 250px;
 	left: 750px;
@@ -229,7 +229,7 @@ a{
 }
 
 #cloud3{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	top: 100px;
 	right: 470px;
@@ -238,7 +238,7 @@ a{
 }
 
 #tree1{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	bottom: 200px;
 	left: 100px;
@@ -247,7 +247,7 @@ a{
 }
 
 #tree2{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	bottom: 130px;
 	left: 570px;
@@ -256,7 +256,7 @@ a{
 }
 
 #tree3{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	bottom: 140px;
 	left: 1050px;
@@ -265,7 +265,7 @@ a{
 }
 
 #tree4{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	bottom: 350px;
 	right: 530px;
@@ -274,7 +274,7 @@ a{
 }
 
 #tree5{
-	position: absolute;
+	position: fixed;
 	transform: scale(5);
 	bottom: 150px;
 	right: 100px;
