@@ -128,6 +128,27 @@ a{
 	opacity: 100%;
 }
 
+.modificateur{
+	margin: 0 0 20px 15px;
+	background-color: #64450a;
+	color: #ff9f07;
+	padding: 5px;
+	border-radius: 50%;
+	border: solid;
+	cursor: pointer;
+}
+
+.modificateurSection{
+	background-color: #64450a;
+	color: #ff9f07;
+	padding: 5px;
+	border-radius: 50%;
+	border: solid;
+	cursor: pointer;
+	text-align: center;
+	margin-left: 45%;
+}
+
 .ciel{
 	position: fixed;
 	z-index: -3;
