@@ -2,9 +2,9 @@
 if(localStorage.getItem("nomBoites") === null || localStorage.getItem("sections") === null || localStorage.getItem("liens") === null){
     localStorage.setItem("nomBoites", '["Social","Divertissement","Prog","Utile"]');
     localStorage.setItem("sections", '[["Twitter", "Facebook", "Reddit", "Discord", ""], ' +
-    '["Furaffinity", "Youtube", "Spotify", ""], ' +
-    '["Bootstrap", "StackOverflow", "GitHub", ""], ' +
-    '["PayPal", "OutlookOffice", "Portail Mediaschool", ""]]');
+    '["Furaffinity", "Youtube", "Spotify", "", ""], ' +
+    '["Bootstrap", "StackOverflow", "GitHub", "", ""], ' +
+    '["PayPal", "OutlookOffice", "Portail Mediaschool", "", ""]]');
     localStorage.setItem("liens", '[["https://twitter.com/", "https://facebook.com/", "https://www.reddit.com/", "https://discordapp.com/", ""],' +
         '["https://furaffinity.net/", "https://www.youtube.com/", "https://www.spotify.com/", "", ""],' +
         '["https://getbootstrap.com/", "https://stackoverflow.com/", "https://github.com/", "", ""],' +
