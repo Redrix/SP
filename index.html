@@ -16,10 +16,10 @@
 	
 	<body>
 		 <div class="conteneur">
-			<div class="heure" id="heure"></div>
-			<div class="date" id="date"></div>
+			<div class="heure animation-g" id="heure"></div>
+			<div class="date animation-d" id="date"></div>
 		</div>
-		<div class = "conteneur">
+		<div class = "conteneur fade-in">
 			<div class="icon"><img src="IMG_20191114_153339_888.png" alt="Icone"></div>
 			<div class = "barre">
 				<form id="recherche" method="GET" action="https://google.com/search">
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 		<div class="conteneur">
-			<div class="boite"> 
+			<div class="boite animation-g"> 
 				<h2 class="titreBoite">Social <i class="far fa-edit modificateur" onclick="modifier(0)"></i></h2>
 				<div class="section"><a href="https://twitter.com/">Twitter</a></div>
 				<div class="section"><a href="https://facebook.com/">Facebook</a></div>
@@ -54,7 +54,7 @@
 				<div class="section"><a href="https://discordapp.com/">Discord</a></div>
 				<div class="section"></div>
 			</div>
-			<div class="boite"> 
+			<div class="boite animation-g"> 
 				<h2 class="titreBoite">Divertissement <i class="far fa-edit modificateur" onclick="modifier(1)"></i></h2>
 				<div class="section"><a href="https://furaffinity.net/">Furaffinity</a></div>
 				<div class="section"><a href="https://www.youtube.com/">Youtube</a></div>
@@ -62,7 +62,7 @@
 				<div class="section"></div>
 				<div class="section"></div>
 			</div>
-			<div class="boite"> 
+			<div class="boite animation-d"> 
 				<h2 class="titreBoite">Prog <i class="far fa-edit modificateur" onclick="modifier(2)"></i></h2>
 				<div class="section"><a href="https://getbootstrap.com/">Bootstrap</a></div>
 				<div class="section"><a href="https://stackoverflow.com/">StackOverflow</a></div>
@@ -70,7 +70,7 @@
 				<div class="section"></div>
 				<div class="section"></div>
 			</div>
-			<div class="boite"> 
+			<div class="boite animation-d"> 
 				<h2 class="titreBoite">Utile <i class="far fa-edit modificateur" onclick="modifier(3)"></i></h2>
 				<div class="section"><a href="https://www.paypal.com/">PayPal</a></div>
 				<div class="section"><a href="https://login.microsoftonline.com/">OutlookOffice</a></div>
@@ -79,7 +79,7 @@
 				<div class="section"></div>
 			</div>
 		</div>
-			<div class="API" id="API">API phrase aléatoire</div>
+			<div class="API fade-in" id="API">API phrase aléatoire</div>
 			<div class="fondannime">
 			<div class="ciel"></div>
 			<div class="moon"></div>

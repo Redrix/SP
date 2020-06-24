@@ -1,3 +1,7 @@
+body{
+	overflow-x: hidden;
+}
+
 .conteneur{
 	display: flex;
 	flex-wrap: wrap;
@@ -390,4 +394,31 @@ a{
 		height: 80px;
 		width: 80px;
 	}
+}
+
+.animation-g{
+	animation: translationG 1s;
+}
+
+.animation-d{
+	animation: translationD 1s;
+}
+
+.fade-in{
+	animation: fade-in 2s;
+}
+
+@keyframes translationG{
+	from{ transform: translateX(-100px); opacity: 0;}
+	to{ transform: translateX(0); opacity: 1; }
+}
+
+@keyframes translationD{
+	from{ transform: translateX(100px); opacity: 0; }
+	to{ transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fade-in{
+	from{ opacity: 0; }
+	to{ opacity: 1; }
 }
