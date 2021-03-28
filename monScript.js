@@ -210,7 +210,7 @@ function changeActive(){
             document.getElementById("recherche").setAttribute("action", "https://www.bing.com/search");
         break;
 
-        case "https://www.seeweb.fr/wp-content/uploads/2016/03/yahoo-logo-purple.jpg":
+        case "https://www.numerama.com/content/uploads/2019/09/yahoo-nouveau.jpg":
             document.getElementById("recherche").setAttribute("action", "https://fr.search.yahoo.com/search");
         break;
 
