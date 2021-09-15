@@ -218,7 +218,7 @@ function changeActive(){
             document.getElementById("recherche").setAttribute("action", "https://duckduckgo.com/");
         break;
 
-        case "/Logo/youtube.jpg":
+        case "Logo/youtube.jpg":
             document.getElementById("recherche").setAttribute("action", "https://www.youtube.com/results");
         break;
     }
