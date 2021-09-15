@@ -218,7 +218,7 @@ function changeActive(){
             document.getElementById("recherche").setAttribute("action", "https://duckduckgo.com/");
         break;
 
-        case "https://www.graphiline.com/src/applications/news/imaloader/images/graphiline/logo-icone-youtube-2017.jpg":
+        case "/Logo/youtube.jpg":
             document.getElementById("recherche").setAttribute("action", "https://www.youtube.com/results");
         break;
     }
