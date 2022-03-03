@@ -23,7 +23,7 @@
 			<div class="icon"><img src="IMG_20191114_153339_888.png" alt="Icone"></div>
 			<div class = "barre">
 				<form id="recherche" method="GET" action="https://google.com/search">
-					<label>Search : <input type="text" name="q"/></label>
+					<label>Search : <input type="text" name="q" class="searchBar"/></label>
 				</form>
 			</div>
 			<div class="icon1"><img src="IMG_20191114_153339_888.png" alt="Icone"></div>
@@ -98,6 +98,39 @@
 			<i id="tree4" class="fas fa-tree"></i>
 			<i id="tree5" class="fas fa-tree"></i>
 		</div>
+		 <div id="modification" class="hidden fixed">
+			<div class="modif-box">
+				<div class="form-container">
+					<h2 class="w-100 m-0">Modification des boîtes</h2>
+					<h2 class="w-100 py-2 m-0">Titre boite</h2>
+					<div class="inputContainer py-1">
+						<input type="text" class="modificationTitreInput m-auto"/>
+					</div>
+					<h2 class="w-100 py-2 m-0">Liens</h2>
+					<div class="inputContainer py-1">
+						<input type="text" class="modificationSectionInput">
+						<input type="text" class="modificationLiensInput">
+					</div>
+					<div class="inputContainer py-1">
+						<input type="text" class="modificationSectionInput"/>
+						<input type="text" class="modificationLiensInput">
+					</div>
+					<div class="inputContainer py-1">
+						<input type="text" class="modificationSectionInput"/>
+						<input type="text" class="modificationLiensInput">
+					</div>
+					<div class="inputContainer py-1">
+						<input type="text" class="modificationSectionInput"/>
+						<input type="text" class="modificationLiensInput">
+					</div>
+					<div class="inputContainer py-1">
+						<input type="text" class="modificationSectionInput"/>
+						<input type="text" class="modificationLiensInput">
+					</div>
+					<button id="confirmModif" class="m-auto">Modifier</button>
+				</div>
+			</div>
+		 </div>
 		<script src="monScript.js"></script>
 	</body>
 </html>

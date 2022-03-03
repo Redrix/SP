@@ -1,5 +1,14 @@
+*{
+	box-sizing: border-box;
+}
+
 body{
+	background-color: #0C6D75;
+	margin: 40px 80px 80px 80px;
+	color: white;
+	font-family: 'Permanent Marker', cursive;
 	overflow-x: hidden;
+	position: relative;
 }
 
 .conteneur{
@@ -63,20 +72,11 @@ h2{
 	overflow-wrap: break-word;
 }
 
-body{
-	background-color: #0C6D75;
-	margin: 80px;
-	color: white;
-	font-family: 'Permanent Marker', cursive;
-	margin-top: 40px;
-	margin: none;
-}
-
 label{
 	font-size: 50px;
 }
 
-input{
+.searchBar{
 	width: 60%;
 	background: none;
 	border: none;
@@ -128,7 +128,7 @@ a{
 }
 
 #actif{
-	box-shadow: 0px 0px 5px 5px lightblue;
+	box-shadow: 0 0 5px 5px lightblue;
 	opacity: 100%;
 }
 
@@ -151,6 +151,58 @@ a{
 	cursor: pointer;
 	text-align: center;
 	margin-left: 45%;
+}
+
+.fixed{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hidden{
+	display: none;
+}
+
+.w-100{
+	width: 100%;
+}
+
+.m-auto{
+	margin: auto;
+}
+
+.m-0{
+	margin: 0;
+}
+
+.modif-box{
+ 	background: white;
+}
+
+.form-container{
+	color: black !important;
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inputContainer{
+	flex: 0 0 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inputContainer input{
+	flex: 0 0 50%;
+}
+
+.py-2{
+	padding: 1rem 0;
+}
+
+.py-1{
+	padding: 0.5rem 0;
 }
 
 .ciel{
@@ -314,7 +366,7 @@ a{
 }
 
 .logo:hover{
-	box-shadow: 0px 0px 5px 5px lightblue;
+	box-shadow: 0 0 5px 5px lightblue;
 	opacity: 100%;
 }
 

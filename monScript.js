@@ -57,93 +57,26 @@ function afficherDate(){ // Fonction pour récupérer la date et l'afficher
 }
 
 function jourStr(jour){ // Fonction pour retourner le jour de la semaine en text
-    switch (jour){
-        case 0:
-            return "Dimanche";
-        break;
-
-        case 1:
-            return "Lundi";
-        break;
-
-        case 2:
-            return "Mardi";
-        break;
-
-        case 3:
-            return "Mercredi";
-        break;
-
-        case 4:
-            return "Jeudi";
-        break;
-
-        case 5:
-            return "Vendredi";
-        break;
-
-        case 6:
-            return "Samedi";
-        break;
-
-        default:
-            return "Erreur";
-    }
+    let jours = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+    return jours[jour];
 }
 
 function moisStr(mois){ // Fonction pour retourner le mois en text
-    switch (mois){
-        case 0:
-            return "Janvier";
-        break;
-
-        case 1:
-            return "Février";
-        break;
-
-        case 2:
-            return "Mars";
-        break;
-
-        case 3:
-            return "Avril";
-        break;
-
-        case 4:
-            return "Mai";
-        break;
-
-        case 5:
-            return "Juin";
-        break;
-
-        case 6:
-            return "Juillet";
-        break;
-
-        case 7:
-            return "Août";
-        break;
-
-        case 8:
-            return "Septembre";
-        break;
-
-        case 9:
-            return "Octobre";
-        break;
-
-        case 10:
-            return "Novembre";
-        break;
-
-        case 11:
-            return "Décembre";
-        break;
-
-        default:
-            return "Erreur";
-    }
+    let nomMois = [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+    ];
+    return nomMois[mois];
 }
 
 function getQuote(){ // API pour récupérer une phrase aléatoire
@@ -241,7 +174,43 @@ function initialisation(){ //Afficher les liens et titres perso
     }
 }
 
-function modifier(boiteAModifier){ //Choisir quoi modifier dans une boite
+// V2.0 de la modification de boîtes
+
+function modifier(numeroBoite){
+    let titre = document.getElementsByClassName("modificationTitreInput");
+    let sections = document.getElementsByClassName("modificationSectionInput");
+    let liens = document.getElementsByClassName("modificationLiensInput");
+    document.getElementById("modification").classList.toggle("hidden");
+    titre[0].value = titreEnregistres[numeroBoite];
+    for(let i = 0; i < sectionEnregistrees[numeroBoite].length; i++){
+        sections[i].value = sectionEnregistrees[numeroBoite][i];
+    }
+    for(let i = 0; i < liensEnregistrees[numeroBoite].length; i++){
+        liens[i].value = liensEnregistrees[numeroBoite][i];
+    }
+    document.getElementById("confirmModif").setAttribute("Onclick", "modification(" + numeroBoite + ")")
+}
+
+function modification(numeroBoite){
+    let titre = document.getElementsByClassName("modificationTitreInput");
+    let sections = document.getElementsByClassName("modificationSectionInput");
+    let liens = document.getElementsByClassName("modificationLiensInput");
+    document.getElementById("confirmModif").removeAttribute("Onclick");
+    document.getElementById("modification").classList.toggle("hidden");
+    titreEnregistres[numeroBoite] = titre[0].value;
+    for(let i = 0; i < sections.length; i++){
+        sectionEnregistrees[numeroBoite][i] = sections[i].value;
+        liensEnregistrees[numeroBoite][i] = liens[i].value;
+    }
+    localStorage.setItem("nomBoites", JSON.stringify(titreEnregistres));
+    localStorage.setItem("sections", JSON.stringify(sectionEnregistrees));
+    localStorage.setItem("liens", JSON.stringify(liensEnregistrees));
+    window.location.reload();
+}
+
+// V1.0 du changement des boites, mis a jour depuis
+
+/*function modifier(boiteAModifier){ //Choisir quoi modifier dans une boite
     let aModifier = prompt('Saisir "1" pour modifier le titre\nSaisir "2" pour modifier les liens', "");
     if (aModifier === "1"){
         modifierTitreBoite(boiteAModifier);
@@ -287,4 +256,4 @@ function modifierSectionBoite(numeroBoite){ //Modifier un lien d'une boite
             }
         }
     }
-}
+}*/
