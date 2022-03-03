@@ -164,6 +164,43 @@ a{
 	display: none;
 }
 
+#close{
+	height: 20px;
+	text-align: center;
+	color: white;
+	background-color: #d51010;
+	height: 25px;
+	width: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+#close::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-45%, 145%);
+	background-color: white;
+	height: 5px;
+	width: 100%;
+	transform-origin: center;
+	rotate: 45deg;
+}
+
+#close::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(30%, 230%);
+	background-color: white;
+	height: 5px;
+	width: 100%;
+	transform-origin: center;
+	rotate: 135deg;
+}
+
 .w-100{
 	width: 100%;
 }

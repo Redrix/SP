@@ -127,6 +127,8 @@ function addEvent(){
     for ( let i=0; i < test.length; i++){
         test[i].addEventListener("click", changeActive);
     }
+    document.getElementById("close").addEventListener("click", function (event){document.getElementById("modification").classList.toggle("hidden");});
+
 }
 
 function changeActive(){
@@ -188,7 +190,7 @@ function modifier(numeroBoite){
     for(let i = 0; i < liensEnregistrees[numeroBoite].length; i++){
         liens[i].value = liensEnregistrees[numeroBoite][i];
     }
-    document.getElementById("confirmModif").setAttribute("Onclick", "modification(" + numeroBoite + ")")
+    document.getElementById("confirmModif").setAttribute("Onclick", "modification(" + numeroBoite + ")");
 }
 
 function modification(numeroBoite){
