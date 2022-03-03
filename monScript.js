@@ -4,11 +4,11 @@ if(localStorage.getItem("nomBoites") === null || localStorage.getItem("sections"
     localStorage.setItem("sections", '[["Twitter", "Facebook", "Reddit", "Discord", ""], ' +
     '["Furaffinity", "Youtube", "Spotify", "", ""], ' +
     '["Bootstrap", "StackOverflow", "GitHub", "", ""], ' +
-    '["PayPal", "OutlookOffice", "Portail Mediaschool", "", ""]]');
+    '["PayPal", "OutlookOffice", "", "", ""]]');
     localStorage.setItem("liens", '[["https://twitter.com/", "https://facebook.com/", "https://www.reddit.com/", "https://discordapp.com/", ""],' +
         '["https://furaffinity.net/", "https://www.youtube.com/", "https://www.spotify.com/", "", ""],' +
         '["https://getbootstrap.com/", "https://stackoverflow.com/", "https://github.com/", "", ""],' +
-        '["https://www.paypal.com/" ,"https://login.microsoftonline.com/", "http://portail.mediaschool.eu/", "", ""]]');
+        '["https://www.paypal.com/" ,"https://login.microsoftonline.com/", "", "", ""]]');
 }else{
     console.log("Tu as déjà les noms <:3");
 }
