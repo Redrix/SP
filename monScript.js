@@ -91,7 +91,7 @@ function getQuote(){ // API pour récupérer une phrase aléatoire
 			console.error(status + " : " + error);
 		}
 	});
-};
+}
 
 function easterEgg(){ // Un easter egg
     nombreDeClick += 1;
@@ -135,19 +135,19 @@ function changeActive(){
     let temp = document.getElementById("actif").getAttribute("src");
     switch (temp){
 
-        case "https://1.bp.blogspot.com/-kBxIb1MjScw/XO3Xrlz__eI/AAAAAAAAIIU/Xbj3nolyDWwo_1oFucBqz1Gq9ujLkvVXgCLcBGAs/s1600/favicon-google.png":
+        case "Logo/google.jpg":
             document.getElementById("recherche").setAttribute("action", "https://google.com/search");
         break;
 
-        case "https://www.abondance.com/wp-content/uploads/2016/01/b-de-bing-vert.jpg":
+        case "Logo/bing.png":
             document.getElementById("recherche").setAttribute("action", "https://www.bing.com/search");
         break;
 
-        case "https://www.numerama.com/content/uploads/2019/09/yahoo-nouveau.jpg":
+        case "Logo/yahoo.png":
             document.getElementById("recherche").setAttribute("action", "https://fr.search.yahoo.com/search");
         break;
 
-        case "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kUCNAQ1hi5MQ1xMDuMisHgHaHa%26pid%3DApi&f=1":
+        case "Logo/duckduckgo.jpg":
             document.getElementById("recherche").setAttribute("action", "https://duckduckgo.com/");
         break;
 
